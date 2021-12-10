@@ -1,0 +1,74 @@
+.section4{
+    width:100%;
+    min-height:990px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    overflow: hidden;
+}
+.our_projects{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:120px;
+    background: #303263;
+    text-align: center;
+}
+.our_projects h3{
+    font-size: 36px;
+    font-weight: 700;
+    color:white;
+}
+.section4 a{
+    display: block;
+    width:400px;
+    height:auto;
+    margin: auto;
+    overflow: hidden;
+}
+.section4 img{
+    width: 400px;
+    height: 300px;
+}
+.section4  ul{
+    width:100%;
+    height:65px;
+    padding:10px 0px;
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: space-evenly;
+    background: #303263;
+    margin: 0px;
+}
+.section4  ul  li{
+    width:60px;
+    height:45px;
+    margin: 0px;
+    background: rgb(23, 150, 90);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-weight: 700;
+    border-radius: 3px;
+    box-shadow:1px 1px 1px 1px grey;
+    border:1px solid gray
+}
+.section4 ul > li:active{
+    background: #000;
+}
+.section4 ul > li.active{
+    background: #000;
+}
+.direct_icon{
+    font-size: 30px;
+}
+
+@media(max-width:419px){
+    .section4  ul{
+        height:130px;
+    }
+}

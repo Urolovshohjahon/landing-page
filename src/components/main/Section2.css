@@ -1,0 +1,22 @@
+.section2{
+    width: 100%;
+    min-height:560px;
+    background: url('../../images/11_02.jpg') no-repeat center center/cover;
+    padding: 130px 0px 160px 0px;
+    overflow: hidden;
+}
+.section2 h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+}
+.section2 p{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+}

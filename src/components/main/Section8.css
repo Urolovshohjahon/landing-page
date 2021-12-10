@@ -1,0 +1,124 @@
+.section8{
+    width:100%;
+    min-height:560px;
+    background: url('../../images/ending_02.jpg') no-repeat center center/cover;
+    position:relative;
+    padding: 155px 0px 100px 0px;
+    overflow: hidden;
+}
+.section8 .pinned3{
+    width: 100%;
+    height: 100%;
+    background: #48425933;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section8 .ending{
+    width:375px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index:1;
+}
+.section8 .ending h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.section8 .ending p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-top:50px;
+    line-height: 30px;
+}
+.section8 form{
+    display: flex;
+    max-width: 610px;
+    flex-direction: column;
+    z-index:0;
+}
+.section8 form  .inputing{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    
+}
+.section8 form .inputing .input50{
+    font-size:18px;
+    display: block;
+    width:50%;
+    height:40px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border:3px solid white;
+    border-bottom: none;
+}
+.section8 form .inputing .input100{
+    font-size:18px;
+    display: block;
+    width:100%;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    height:40px;
+    border:3px solid white;
+    border-bottom:none;
+}
+.section8 form .inputing .textarea{
+    font-size:18px;
+    display: block;
+    width:100%;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    height:160px;
+    border:3px solid white;
+    list-style: none;
+}
+.section8 form .sending{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    margin-top:10px;
+    padding:0px 5px;
+}
+.section8 .sending p{
+    display: inline;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    max-width: 420px;
+    color: white;
+}
+.section8 .sending button{
+    width:100px;
+    height:35px;
+    background: #f6ae48;
+    color: white;
+    border-radius:3px;
+}
+input::placeholder, .textarea::placeholder{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+@media(max-width:800px){
+    .section8{
+        z-index:0;
+    }
+}
+@media(max-width:1014px){
+    .section8{
+        padding: 85px 0px 100px 0px;
+    }
+    .section8 .ending{
+        width: 90%;
+        
+    }
+    .section8 form{
+        max-width: 90%;
+        margin-top: 20px;
+    }
+}

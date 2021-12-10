@@ -1,0 +1,131 @@
+.base{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputing{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+.item{
+    display: flex;
+    width: 800px;
+    height: 50px;
+    border: 5px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px;
+    border-radius:20px;
+}
+.text{
+    width: 600px;
+    overflow: hidden;
+}
+.input{
+    display: block;
+    width: 400px;
+    height: 30px;
+}
+@media(max-width:991px){
+    .item{
+        width: 300px;
+    }
+    .text{
+        width: 200px;
+    }
+    .fa-heart{
+        margin-right: 10px;
+    }
+    .input{
+        display: block;
+        width: 290px;
+    }
+}
+.item1{
+    display: flex;
+    width: 800px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.btn{
+    background: red;
+    margin-right: 20px;
+} 
+p{
+    font-size: 20px;
+    font-weight: 600;
+    color: indigo;
+    margin-left: 20px;
+}
+
+.add{
+    margin-left: 5px;
+}
+.red{
+    color:red;
+}
+.bold{
+    font-weight: 900;
+}
+
+/* .text1{
+    display: block;
+    width: 100px;
+} */
+.bigBlock{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.block{
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid lime;
+    margin-top: 10px;
+}
+.block .img{
+    display: block;
+    width: 350px;
+    height:300px;
+    border-radius:5% ;
+}
+.inputings{
+    display: block;
+    width: 650px;
+    height: 50px;
+    background: lime;
+    margin: auto;
+   
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.p{
+    color: indigo;
+    margin: 0;
+    padding: 0;
+
+}
+@media(max-width:575px){
+    .inputings{
+        width: 300px;
+        margin: auto;
+    }
+}
