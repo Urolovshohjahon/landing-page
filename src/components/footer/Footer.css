@@ -1,5 +1,78 @@
-footer{
-    width:100%;
-    height:110px;
-    background: #f6ae48;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+  box-sizing: border-box;
 }
+
+
+
+footer{
+    min-height: 593px;
+    background: #252641;
+    padding:  100px 0;
+}
+
+p.text-start22{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-align: start;
+}
+p.text-start10{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: #e9e6e6;
+    text-align: start;
+}
+.footer-line{
+    display: block;
+    width: 1px;
+    height: 100px;
+    background: grey;
+}
+
+footer input{
+    width: 350px;
+    height: 60px;
+    border: 1px solid #83839A;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #bd848400;
+    margin-right: 10px;
+    padding-left: 30px;
+    color: white;
+}
+footer input::placeholder{
+    color:rgb(231, 226, 226);
+    margin-left: 50px;
+  }
+footer input:focus{
+    outline: none;
+  }
+
+  footer button.form{
+    width: 179px;
+    height: 60px;
+    background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+  }
+
+  @media(max-width:767px){
+    .footer-line{
+        display: none;
+    }
+  }

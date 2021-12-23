@@ -1,159 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway','sans-serif';
-    list-style: none;
-    text-decoration: none;
-}
-.container{
-    height: auto;
-    max-width: 1400px;
-    width: 100%;
-    margin: auto;
-    padding: 0px 15px;
-   
-    
-}
-.row{
-    display: flex;
-    width:100%;
-    height:auto;
-    flex-wrap:wrap;
-    margin:auto;
 }
 
-header{
-    min-height: 810px;
-    display: flex;
-    width:100%;
-    background: url('../../images/11_01.png') no-repeat center center/cover;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    position: relative;
+
+.header{
+    padding: 45px 0px;
+    background: #FFF2E1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
     overflow: hidden;
-}
-header .container{
+    box-sizing: border-box;
+} 
+.header .list-toogle{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content:space-evenly;
-    flex-direction: column;
-    position:relative;
 }
-header .container .row{
-    height: 100%;
-    align-items: center;
-    justify-content:space-evenly;
-    flex-direction: column;
-}
-header .pinned{
-    width: 100%;
-    height: 100%;
-    background: #48425933;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation:myh1 2s normal;
-}
-header .pinned2{
-    width: 100%;
-    height: 100%;
-    background: #48425933;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation:myh2 2s normal;
-}
-@keyframes myh1 {
-    from {transform: translateX(-100%);}
-    to {transform: translateX(0px)}
-  }
-@keyframes myh2 {
-    from {transform: translateX(100%);}
-    to {transform: translateX(0px)}
-  }
-
-header h1{
-    font-size: 48px;
-    font-weight: 700;
-    color: white;
-    max-width: 1050px;
-    text-align: center;
-    margin-bottom:50px;
-}
-header p {
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-    max-width: 840px;
-    margin-bottom:68px;
-}
-.header_blog{
-    width: 100%;
+.header .login-toogle{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-}
-.header_blog .miniblog{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 245px;
-    height:160px;
-    border: 3px solid white;
-    margin-bottom:20px;
+}
+.menu{
+    display: none;
     position: relative;
 }
-.icon{
-    color:white;
-    width:47px;
-    height:36px;
-    position:absolute;
-    top:-18px;
-    z-index:1;
+.menu_button{
+    color: rgb(243, 130, 149);
+    font-size: 40px;
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    right: 0px;
+    top:-30px;
 }
-.header_blog .miniblog h2{
+.close{
     color: white;
-    font-size: 48px;
-    font-weight: 700;
+    position: absolute;
+    left: 87.78%;
+    right: 8.61%;
+    top: 5.62%;
+    bottom: 92.34%;
 }
-.header_blog .miniblog p{
-    color: white;
-    font-size: 18px;
+
+.header ul{
+    list-style:none;
+    width:auto;
+    flex:0.7;
+    margin:0;
+}
+.header ul a{
+    text-decoration: none;
+    color: #252641;
     font-weight: 400;
-    margin: 0;
-    text-align:center;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    
 }
-.gototop{
-    width:30px;
-    height:30px;
-    position:fixed;
-    bottom:15px;
-    border-radius: 25px;
-    right:15px;
-    z-index:1;
+.header ul a:hover{
+    color: gray;
+    
+}
+.header img{
+    width: 130px;
+    height: 50px;
+}
+
+.btn-login, .btn-signup{
+    width:160px;
+    height: 60px;
+    border-radius:30px;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border: 0px solid green;
+    box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
+    z-index: 1;
+}
+.btn-login{
+    color: #6c6c6c;
     background: white;
-    color: rgb(12, 56, 92);
+}
+.btn-signup{
+    color: white;
+    background: #F48C06;
+
 }
 
-@media(max-width:768px){
-    header{
-        padding-top: 120px;
+.header_main{
+    background: #FFF2E1;
+    padding: 150px 0px 0px 0px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    width: 100%;
+}
+
+.header_main h1 span{
+    color: #F48C06;
+}
+.header_main h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 81px;
+    color: #1f0c86;
+    margin: 0;
+    margin-top: 100px;
+    text-align:start;
+
+}
+
+.header_main p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 160%;  
+    color: #464646;
+    text-align:start;
+}
+
+.header_main .btns{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+}
+.header_main .btns a{
+    text-decoration: none;
+    color: #252641;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.header_main img{
+    width:496px;
+    height: 660px;
+}
+
+.strel{
+    width:164px;
+    height: 70px;
+    border-radius:35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+    background: #F48C06;
+    margin-bottom: 10px;
+}
+.strel .soat{
+    width: 35px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    top: -68px;
+    left: 77px;
+    animation:2s strel infinite;
+}
+@keyframes strel{
+    0%{
+        transform:rotate(0deg);
     }
-    header h1{
-        font-size:24px;
-    }
-    header .gototop{
-        width:30px;
-        height:30px;
+    
+    100%{
+        transform:rotate(360deg);
     }
 }
 
-@media(max-width:600px){
-    .header_blog .miniblog{
-        width: 90%;
+
+
+
+
+@media(max-width:991px) {
+    .menu{
+        display: block;
+        position: relative;
+    }
+    .navjs{
+        display: none;
+    }
+    .header .list-toogle{
+        display: none;
+    }
+    .header .login-toogle{
+        display: none;
+    }
+    .header{
+        padding: 15px 0px;
+    } 
+}
+
+@media(max-width:1157px) {
+    .header_main{
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+    }
+}
+@media(max-width: 576px){
+    .header_main img{
+        width: 330px;
+        height: 440px;
+    }
+    .header_main h1 {
+        font-size: 36px;
+        line-height: 54px;
+        margin-top: 50px;
+    }
+    .btn-signup{
+        width:100%;
+        height: 60px;
+        border-radius:30px;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .strel{
+        width:100%;
+        height: 70px;
+        border-radius:35px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        overflow: hidden;
+        position:relative;
+        background: #F48C06;
+    }
+    .strel .soat{
+        width: 15px;
+        height: 600px;
+        background: white;
+        position: absolute;
+        top: -270px;
+        left: calc(100%/2 - 7.5px);
+        animation:8s strel infinite;
+    }
+    .header_main .btns{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+@media(max-width:400px){
+    .menu_button{
+        color: rgb(243, 130, 149);
+        font-size: 40px;
+        cursor: pointer;
+        font-size: 60px;
+        
+    position: absolute;
+    right: 0px;
+    top:-30px;
     }
 }
